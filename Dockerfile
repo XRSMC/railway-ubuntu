@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Install necessary packages
 RUN apt-get update && \
-    apt-get install -y git bash curl && \
+    apt-get install -y git bash wget curl && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
